@@ -63,4 +63,4 @@ var promesas = nombresPokemones.map(function(nombre) {
 	saludarPokemon(nombre);
 })
 
-Promise.all(promesas)
+//Para usar await debemos usar async en la funcion 
