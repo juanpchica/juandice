@@ -53,5 +53,14 @@ function onError(nombre){
 }
 
 //Ejecuto la funcion que tiene la promesa
-saludarPokemon("pikachuh")
-saludarPokemon("pikachu")
+//saludarPokemon("pikachuh")
+//saludarPokemon("pikachu")
+
+
+var nombresPokemones = ["pikachu","charmander","blastoise","beedrill","butterfree"];
+
+var promesas = nombresPokemones.map(function(nombre) {
+	saludarPokemon(nombre);
+})
+
+Promise.all(promesas)
